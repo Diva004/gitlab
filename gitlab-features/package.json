@@ -1,0 +1,35 @@
+{
+  "name": "network-project",
+  "main": "app.js",
+  "engines": {
+    "node": "v18.12.1",
+    "npm": "8.19.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElenaChes/network-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.16.3",
+    "express-session": "^1.17.3",
+    "mongoose": "^6.8.2",
+    "open": "^8.4.0"
+  },
+  "version": "1.0.0",
+  "description": "<img align=\"right\" style=\"width:200px; height:auto;\" src=\"/public/images/favicon.ico\">",
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ElenaChes/network-project/issues"
+  },
+  "homepage": "https://github.com/ElenaChes/network-project#readme"
+}

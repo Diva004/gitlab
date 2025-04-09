@@ -1,0 +1,39 @@
+---
+# Travel Agency App Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: travel-agency-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: travel-agency
+  template:
+    metadata:
+      labels:
+        app: travel-agency
+    spec:
+      containers:
+        - name: app
+          image: kanishka9723/travel23
+          ports:
+            - containerPort: 3000
+          env:
+            - name: DB
+              value: "mongodb+srv://kannan:kannan123@devopsbatch.plhjfie.mongodb.net/?retryWrites=true&w=majority"
+---
+# Travel Agency App Service
+apiVersion: v1
+kind: Service
+metadata:
+  name: travel-agency-service
+spec:
+  selector:
+    app: travel-agency
+  ports:
+    - protocol: TCP
+      port: 9000
+      targetPort: 9000
+  type: NodePort
+---
