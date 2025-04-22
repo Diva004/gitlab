@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: kanishka9723/travel23
+          image: Diva100898/travel23
           ports:
             - containerPort: 3000
           env:
